@@ -112,6 +112,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       {
+        rel: "icon",
+        type: "image/png",
+        href: "/saiaqua%20title%20logo.png",
+      },
+      {
         rel: "stylesheet",
         href: appCss,
       },
