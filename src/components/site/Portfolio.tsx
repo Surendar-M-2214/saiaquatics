@@ -8,13 +8,55 @@ import discus from "@/assets/project-discus.jpg";
 
 type Cat = "All" | "Home" | "Office" | "Commercial" | "Aquascaping";
 
-const projects: { img: string; title: string; cat: Exclude<Cat, "All">; size: string; loc: string; span: string }[] = [
-  { img: home, title: "Curved Wall Aquarium", cat: "Home", size: "300 gal", loc: "Bandra Residence", span: "sm:col-span-2 sm:row-span-2" },
+const projects: {
+  img: string;
+  title: string;
+  cat: Exclude<Cat, "All">;
+  size: string;
+  loc: string;
+  span: string;
+}[] = [
+  {
+    img: home,
+    title: "Curved Wall Aquarium",
+    cat: "Home",
+    size: "300 gal",
+    loc: "Bandra Residence",
+    span: "sm:col-span-2 sm:row-span-2",
+  },
   { img: reef, title: "Reef Showpiece", cat: "Home", size: "180 gal", loc: "Juhu Villa", span: "" },
-  { img: office, title: "Reception Centerpiece", cat: "Office", size: "500 gal", loc: "BKC HQ", span: "sm:col-span-2" },
-  { img: aquascape, title: "Iwagumi Nature Scape", cat: "Aquascaping", size: "60 gal", loc: "Studio Build", span: "" },
-  { img: commercial, title: "Lobby Cylinder", cat: "Commercial", size: "2,000 gal", loc: "5★ Hotel", span: "sm:row-span-2" },
-  { img: discus, title: "Discus Dining Tank", cat: "Home", size: "120 gal", loc: "Powai Penthouse", span: "" },
+  {
+    img: office,
+    title: "Reception Centerpiece",
+    cat: "Office",
+    size: "500 gal",
+    loc: "BKC HQ",
+    span: "sm:col-span-2",
+  },
+  {
+    img: aquascape,
+    title: "Iwagumi Nature Scape",
+    cat: "Aquascaping",
+    size: "60 gal",
+    loc: "Studio Build",
+    span: "",
+  },
+  {
+    img: commercial,
+    title: "Lobby Cylinder",
+    cat: "Commercial",
+    size: "2,000 gal",
+    loc: "5★ Hotel",
+    span: "sm:row-span-2",
+  },
+  {
+    img: discus,
+    title: "Discus Dining Tank",
+    cat: "Home",
+    size: "120 gal",
+    loc: "Powai Penthouse",
+    span: "",
+  },
 ];
 
 const categories: Cat[] = ["All", "Home", "Office", "Commercial", "Aquascaping"];
@@ -25,7 +67,7 @@ export function Portfolio() {
   const filtered = projects.filter((p) => active === "All" || p.cat === active);
 
   return (
-    <section id="portfolio" className="relative py-28">
+    <section id="portfolio" className="flow-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -34,8 +76,7 @@ export function Portfolio() {
               Recent <span className="text-gradient italic">installations</span>.
             </h2>
             <p className="mt-3 max-w-xl text-muted-foreground">
-              A selection of homes, offices and commercial spaces transformed
-              with our aquariums.
+              A selection of homes, offices and commercial spaces transformed with our aquariums.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -102,9 +143,7 @@ export function Portfolio() {
               className="h-[60vh] w-full object-cover"
             />
             <div className="p-6">
-              <div className="text-xs tracking-wider text-aqua uppercase">
-                {filtered[open].cat}
-              </div>
+              <div className="text-xs tracking-wider text-aqua uppercase">{filtered[open].cat}</div>
               <div className="mt-1 font-display text-3xl">{filtered[open].title}</div>
               <div className="mt-2 text-sm text-muted-foreground">
                 {filtered[open].size} · {filtered[open].loc}

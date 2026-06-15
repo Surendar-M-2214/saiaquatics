@@ -33,7 +33,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-28">
+    <section id="contact" className="flow-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -42,8 +42,8 @@ export function Contact() {
               Let&rsquo;s build your <span className="text-gradient italic">aquarium</span>.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Tell us about your space. We&rsquo;ll respond within one business day with a
-              free consultation.
+              Tell us about your space. We&rsquo;ll respond within one business day with a free
+              consultation.
             </p>
 
             <div className="mt-8 space-y-3">
@@ -102,11 +102,7 @@ export function Contact() {
               <Field label="Name" name="name" placeholder="Your full name" />
               <Field label="Phone" name="phone" placeholder="+91 ..." />
               <Field label="Location" name="location" placeholder="City / Area" />
-              <Field
-                label="Project Type"
-                name="type"
-                placeholder="Home / Office / Commercial"
-              />
+              <Field label="Project Type" name="type" placeholder="Home / Office / Commercial" />
               <div className="sm:col-span-2">
                 <label className="text-xs tracking-wider text-muted-foreground uppercase">
                   Message
@@ -166,9 +162,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="text-xs tracking-wider text-muted-foreground uppercase">
-        {label}
-      </label>
+      <label className="text-xs tracking-wider text-muted-foreground uppercase">{label}</label>
       <input
         name={name}
         placeholder={placeholder}

@@ -23,8 +23,8 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">
-            Premium aquarium installations, aquascaping and maintenance for
-            homes, offices and commercial spaces across India.
+            Premium aquarium installations, aquascaping and maintenance for homes, offices and
+            commercial spaces across India.
           </p>
         </div>
 

@@ -44,7 +44,7 @@ function Counter({ end, suffix }: { end: number; suffix: string }) {
 
 export function Stats() {
   return (
-    <section id="why" className="relative py-28">
+    <section id="why" className="flow-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <div className="text-xs tracking-[0.25em] text-aqua uppercase">Why Choose Us</div>
@@ -54,7 +54,10 @@ export function Stats() {
         </div>
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s) => (
-            <div key={s.label} className="glass relative overflow-hidden rounded-3xl p-7 text-center">
+            <div
+              key={s.label}
+              className="glass relative overflow-hidden rounded-3xl p-7 text-center"
+            >
               <div className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-aqua/30 to-cyan-glow/10 text-aqua">
                 <s.icon className="h-6 w-6" />
               </div>

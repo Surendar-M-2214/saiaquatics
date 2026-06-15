@@ -10,7 +10,8 @@ import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
 const SITE_URL = "https://saiaquatics.lovable.app";
-const OG_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60";
+const OG_IMAGE =
+  "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60";
 
 const portfolioItems = [
   { title: "Curved Wall Aquarium", cat: "Home", size: "300 gal", loc: "Bandra Residence" },
@@ -30,7 +31,11 @@ export const Route = createFileRoute("/")({
         content:
           "Bespoke aquarium installations, aquascaping and white-glove maintenance for homes, offices and commercial spaces in Mumbai. 12+ years, 500+ installs.",
       },
-      { name: "keywords", content: "aquarium setup mumbai, custom aquarium, aquascaping, reef tank, aquarium maintenance, commercial aquarium, marine aquarium installation" },
+      {
+        name: "keywords",
+        content:
+          "aquarium setup mumbai, custom aquarium, aquascaping, reef tank, aquarium maintenance, commercial aquarium, marine aquarium installation",
+      },
       { name: "robots", content: "index, follow" },
       { name: "author", content: "Sai Aquatics" },
       { property: "og:title", content: "Sai Aquatics — Premium Aquariums in Mumbai" },
@@ -48,7 +53,10 @@ export const Route = createFileRoute("/")({
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Sai Aquatics — Premium Aquariums" },
-      { name: "twitter:description", content: "Custom aquarium installations, aquascaping and maintenance in Mumbai." },
+      {
+        name: "twitter:description",
+        content: "Custom aquarium installations, aquascaping and maintenance in Mumbai.",
+      },
       { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
@@ -126,11 +134,23 @@ export const Route = createFileRoute("/")({
             "@type": "OfferCatalog",
             name: "Aquarium Services",
             itemListElement: [
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Aquarium Installation" } },
+              {
+                "@type": "Offer",
+                itemOffered: { "@type": "Service", name: "Custom Aquarium Installation" },
+              },
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Aquascaping" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Aquarium Maintenance" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Marine & Reef Tanks" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Aquariums" } },
+              {
+                "@type": "Offer",
+                itemOffered: { "@type": "Service", name: "Aquarium Maintenance" },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: { "@type": "Service", name: "Marine & Reef Tanks" },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: { "@type": "Service", name: "Commercial Aquariums" },
+              },
             ],
           },
         }),
