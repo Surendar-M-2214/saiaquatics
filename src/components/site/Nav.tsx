@@ -25,7 +25,7 @@ export function Nav() {
         
         {/* Left Pill - Logo */}
         <a href="#top" className="flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md px-4 py-2 sm:px-5 sm:py-2.5 shadow-sm border border-slate-200 hover:bg-white transition-colors">
-          <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-6 w-6 sm:h-7 sm:w-7 object-cover rounded-full" />
+          <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-10 w-10 sm:h-12 sm:w-12 object-cover rounded-full" />
           <span className="text-base sm:text-lg font-bold text-[#0B1E36] tracking-tight">Sai Aquatics</span>
         </a>
 

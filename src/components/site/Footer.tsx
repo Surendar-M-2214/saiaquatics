@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 md:grid-cols-4 relative z-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-8 w-8 object-cover rounded-full" />
+            <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-14 w-14 object-cover rounded-full" />
             <span className="font-bold text-2xl tracking-tight text-white">
               Sai <span className="text-[#00BCD4]">Aquatics</span>
             </span>
