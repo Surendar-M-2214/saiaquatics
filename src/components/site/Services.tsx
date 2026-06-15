@@ -1,11 +1,4 @@
-import {
-  Waves,
-  Mountain,
-  Wrench,
-  Sparkles,
-  Fish as FishIcon,
-  Building2,
-} from "lucide-react";
+import { Waves, Mountain, Wrench, Sparkles, Fish as FishIcon, Building2 } from "lucide-react";
 
 const services = [
   {
@@ -42,7 +35,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-28">
+    <section id="services" className="flow-section">
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-60"
         style={{

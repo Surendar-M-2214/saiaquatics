@@ -24,22 +24,21 @@ export function Hero() {
     <section
       id="top"
       ref={ref}
-      className="ocean-bg relative isolate min-h-[100svh] overflow-hidden pt-32 pb-20"
+      className="ocean-bg relative isolate min-h-[100svh] overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20"
     >
       {/* Hero image as 3D aquarium scene */}
       <div
-        className="absolute inset-0 -z-10 opacity-50"
+        className="absolute inset-0 -z-10 opacity-70"
         style={{
           backgroundImage: `url(${heroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           transform: "translate3d(var(--px,0), var(--py,0), 0) scale(1.06)",
           transition: "transform 0.2s ease-out",
-          maskImage:
-            "radial-gradient(ellipse at center, black 55%, transparent 95%)",
+          maskImage: "radial-gradient(ellipse at center, black 55%, transparent 95%)",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/40 to-background" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/25 to-background/70" />
       <CausticsLayer />
       <SwimmingFish />
       <Bubbles count={22} />
@@ -51,7 +50,10 @@ export function Hero() {
             Premium Aquarium Studio · Est. Mumbai
           </div>
 
-          <h1 className="animate-fade-up mt-6 text-5xl leading-[1.05] font-medium sm:text-6xl md:text-7xl lg:text-8xl" style={{ animationDelay: "0.1s" }}>
+          <h1
+            className="animate-fade-up mt-6 text-4xl leading-[1.05] font-medium sm:text-6xl md:text-7xl lg:text-8xl"
+            style={{ animationDelay: "0.1s" }}
+          >
             Transform your space with
             <span className="block italic text-gradient">stunning aquariums</span>
           </h1>
@@ -60,8 +62,8 @@ export function Hero() {
             className="animate-fade-up mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg"
             style={{ animationDelay: "0.2s" }}
           >
-            Custom installations, aquascaping, and white-glove maintenance for homes,
-            offices, and commercial spaces. Living art, engineered to last.
+            Custom installations, aquascaping, and white-glove maintenance for homes, offices, and
+            commercial spaces. Living art, engineered to last.
           </p>
 
           <div
@@ -97,7 +99,7 @@ export function Hero() {
               <div
                 key={s.l}
                 className="glass animate-float-y rounded-2xl px-3 py-4 sm:px-6 sm:py-5"
-                style={{ animationDelay: `${Math.random()}s` }}
+                style={{ animationDelay: `${(Number(s.v.replace(/\D/g, "")) % 7) * 0.13}s` }}
               >
                 <div className="font-display text-3xl font-medium text-gradient sm:text-4xl">
                   {s.v}

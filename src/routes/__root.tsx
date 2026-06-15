@@ -78,17 +78,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Sai Aquatics" },
-      { name: "description", content: "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme" },
+      {
+        name: "description",
+        content:
+          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Sai Aquatics" },
-      { property: "og:description", content: "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme" },
+      {
+        property: "og:description",
+        content:
+          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Sai Aquatics" },
-      { name: "twitter:description", content: "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60" },
+      {
+        name: "twitter:description",
+        content:
+          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4c7d80d2-e19b-496c-b68c-ccb045c5db60",
+      },
     ],
     links: [
       {

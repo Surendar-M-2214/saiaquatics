@@ -32,7 +32,7 @@ export function Testimonials() {
   const t = items[i];
 
   return (
-    <section className="relative py-28">
+    <section className="flow-section">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
           <div className="text-xs tracking-[0.25em] text-aqua uppercase">Testimonials</div>
@@ -52,9 +52,7 @@ export function Testimonials() {
                   <Star key={k} className="h-4 w-4 fill-aqua text-aqua" />
                 ))}
               </div>
-              <p className="mt-6 font-display text-2xl leading-relaxed sm:text-3xl">
-                {t.quote}
-              </p>
+              <p className="mt-6 font-display text-2xl leading-relaxed sm:text-3xl">{t.quote}</p>
               <div className="mt-8 flex items-center justify-center gap-3">
                 <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-aqua to-cyan-glow font-display text-lg text-ocean-deep">
                   {t.name.charAt(0)}
