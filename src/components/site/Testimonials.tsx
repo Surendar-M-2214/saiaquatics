@@ -35,31 +35,31 @@ export function Testimonials() {
     <section className="flow-section">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs tracking-[0.25em] text-aqua uppercase">Testimonials</div>
-          <h2 className="mt-3 text-4xl font-medium sm:text-5xl">
-            Loved by <span className="text-gradient italic">homes &amp; brands</span>.
+          <div className="text-xs font-bold tracking-[0.25em] text-[#00BCD4] uppercase">Testimonials</div>
+          <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
+            Loved by <span className="text-[#00BCD4] italic">homes &amp; brands</span>.
           </h2>
         </div>
 
         <div className="relative mt-14">
-          <div className="glass-strong relative overflow-hidden rounded-[2rem] p-8 sm:p-14 text-center">
-            <div className="absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[10rem] leading-none text-aqua/10 select-none">
+          <div className="bg-white border border-slate-200 shadow-sm relative overflow-hidden rounded-[2rem] p-8 sm:p-14 text-center">
+            <div className="absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[10rem] leading-none text-[#E0F7FA] select-none">
               “
             </div>
             <div className="relative">
               <div className="flex justify-center gap-1">
                 {Array.from({ length: t.rating }).map((_, k) => (
-                  <Star key={k} className="h-4 w-4 fill-aqua text-aqua" />
+                  <Star key={k} className="h-4 w-4 fill-[#00BCD4] text-[#00BCD4]" />
                 ))}
               </div>
-              <p className="mt-6 font-display text-2xl leading-relaxed sm:text-3xl">{t.quote}</p>
+              <p className="mt-6 font-display text-2xl font-medium leading-relaxed sm:text-3xl text-[#0B1E36]">{t.quote}</p>
               <div className="mt-8 flex items-center justify-center gap-3">
-                <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-aqua to-cyan-glow font-display text-lg text-ocean-deep">
+                <div className="grid h-12 w-12 place-items-center rounded-full bg-[#E0F7FA] font-display text-xl font-bold text-[#00BCD4]">
                   {t.name.charAt(0)}
                 </div>
                 <div className="text-left">
-                  <div className="font-medium">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.role}</div>
+                  <div className="font-bold text-[#0B1E36]">{t.name}</div>
+                  <div className="text-xs font-semibold text-slate-500">{t.role}</div>
                 </div>
               </div>
             </div>

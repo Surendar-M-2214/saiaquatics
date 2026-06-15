@@ -48,47 +48,49 @@ export function Contact() {
 
             <div className="mt-8 space-y-3">
               <a
-                href="tel:+919999999999"
-                className="glass flex items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
+                href="tel:+919566002857"
+                className="bg-white border border-slate-200 flex items-center gap-4 rounded-2xl p-4 transition-all hover:shadow-md"
               >
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-aqua/20 text-aqua">
+                <div className="grid h-11 w-11 place-items-center rounded-xl bg-[#E0F7FA] text-[#00BCD4]">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground">Call</div>
-                  <div className="font-medium">+91 99999 99999</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase">Call</div>
+                  <div className="font-bold text-[#0B1E36]">095660 02857</div>
                 </div>
               </a>
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919566002857"
                 target="_blank"
                 rel="noreferrer"
-                className="glass flex items-center gap-4 rounded-2xl p-4 transition-colors hover:bg-white/10"
+                className="bg-white border border-slate-200 flex items-center gap-4 rounded-2xl p-4 transition-all hover:shadow-md"
               >
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/20 text-emerald-300">
+                <div className="grid h-11 w-11 place-items-center rounded-xl bg-green-50 text-green-600">
                   <MessageCircle className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground">WhatsApp</div>
-                  <div className="font-medium">Chat with our studio</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase">WhatsApp</div>
+                  <div className="font-bold text-[#0B1E36]">Chat with our studio</div>
                 </div>
               </a>
-              <div className="glass flex items-center gap-4 rounded-2xl p-4">
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-coral/20 text-coral">
+              <div className="bg-white border border-slate-200 flex items-center gap-4 rounded-2xl p-4">
+                <div className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-red-50 text-red-500">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground">Studio</div>
-                  <div className="font-medium">Mumbai, India</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase">Studio</div>
+                  <div className="font-bold text-[#0B1E36] text-sm sm:text-base leading-snug">
+                    No.8/112, Anna Salai, Satya Nagar,<br/>Kovilambakkam, Chennai 600129
+                  </div>
                 </div>
               </div>
-              <div className="glass flex items-center gap-4 rounded-2xl p-4">
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-cyan-glow/20 text-cyan-glow">
+              <div className="bg-white border border-slate-200 flex items-center gap-4 rounded-2xl p-4">
+                <div className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-500">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-muted-foreground">Email</div>
-                  <div className="font-medium">hello@saiaquatics.in</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase">Email</div>
+                  <div className="font-bold text-[#0B1E36]">hello@saiaquatics.in</div>
                 </div>
               </div>
             </div>
@@ -104,7 +106,7 @@ export function Contact() {
               <Field label="Location" name="location" placeholder="City / Area" />
               <Field label="Project Type" name="type" placeholder="Home / Office / Commercial" />
               <div className="sm:col-span-2">
-                <label className="text-xs tracking-wider text-muted-foreground uppercase">
+                <label className="text-xs font-bold tracking-wider text-slate-500 uppercase">
                   Message
                 </label>
                 <textarea
@@ -112,7 +114,7 @@ export function Contact() {
                   rows={4}
                   maxLength={800}
                   placeholder="Tell us about your space and vision..."
-                  className="mt-2 w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none transition-colors focus:border-aqua/60 focus:bg-white/10"
+                  className="mt-2 w-full resize-none rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-[#0B1E36] outline-none transition-colors focus:border-[#00BCD4] focus:ring-1 focus:ring-[#00BCD4]"
                 />
               </div>
             </div>
@@ -138,12 +140,13 @@ export function Contact() {
           </form>
         </div>
 
-        <div className="mt-12 overflow-hidden rounded-3xl glass-strong">
+        <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 shadow-sm relative w-full pt-[100%] sm:pt-[50%] md:pt-[40%]">
           <iframe
             title="Studio location"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=72.80%2C19.05%2C72.92%2C19.15&layer=mapnik"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.4779395771143!2d80.18362367507595!3d12.941240087371359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fdf9bb65d65%3A0x6ba9bb478c040426!2ssai%20aquatics!5e0!3m2!1sen!2sin!4v1781533271192!5m2!1sen!2sin"
             loading="lazy"
-            className="h-72 w-full opacity-90"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0 w-full h-full border-0"
           />
         </div>
       </div>
@@ -162,12 +165,12 @@ function Field({
 }) {
   return (
     <div>
-      <label className="text-xs tracking-wider text-muted-foreground uppercase">{label}</label>
+      <label className="text-xs font-bold tracking-wider text-slate-500 uppercase">{label}</label>
       <input
         name={name}
         placeholder={placeholder}
         maxLength={120}
-        className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none transition-colors focus:border-aqua/60 focus:bg-white/10"
+        className="mt-2 w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-[#0B1E36] outline-none transition-colors focus:border-[#00BCD4] focus:ring-1 focus:ring-[#00BCD4]"
       />
     </div>
   );

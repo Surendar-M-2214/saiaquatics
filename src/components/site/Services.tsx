@@ -1,4 +1,5 @@
 import { Waves, Mountain, Wrench, Sparkles, Fish as FishIcon, Building2 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -35,50 +36,42 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="flow-section">
-      <div
-        className="pointer-events-none absolute inset-0 -z-10 opacity-60"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 40% at 50% 0%, color-mix(in oklab, var(--aqua) 14%, transparent), transparent 70%)",
-        }}
-      />
+    <section id="services" className="flow-section bg-slate-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <div className="text-xs tracking-[0.25em] text-aqua uppercase">Services</div>
-          <h2 className="mt-3 text-4xl font-medium sm:text-5xl">
-            Everything aquatic, <span className="text-gradient italic">end to end</span>.
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto max-w-2xl text-center"
+        >
+          <div className="text-xs font-bold tracking-[0.2em] text-[#00BCD4] uppercase">Services</div>
+          <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
+            Everything aquatic, <span className="text-[#00BCD4]">end to end</span>.
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-slate-500 font-medium">
             One studio for design, build, livestock and lifelong maintenance.
           </p>
-        </div>
+        </motion.div>
 
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
-            <article
+            <motion.article
               key={s.title}
-              className="tilt-card group relative overflow-hidden rounded-3xl glass p-7"
-              style={{ animationDelay: `${i * 60}ms` }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="group relative overflow-hidden rounded-3xl bg-white border border-slate-200 p-7 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <div
-                className="pointer-events-none absolute -top-20 -right-20 h-48 w-48 rounded-full opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background:
-                    "radial-gradient(circle, color-mix(in oklab, var(--aqua) 35%, transparent), transparent 70%)",
-                }}
-              />
-              <div className="relative grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-aqua/30 to-cyan-glow/10 text-aqua">
-                <s.icon className="h-6 w-6" strokeWidth={1.75} />
+              <div className="relative grid h-12 w-12 place-items-center rounded-2xl bg-cyan-50 text-[#00BCD4] group-hover:bg-[#00BCD4] group-hover:text-white transition-colors duration-300">
+                <s.icon className="h-6 w-6" strokeWidth={2} />
               </div>
-              <h3 className="relative mt-6 font-display text-2xl">{s.title}</h3>
-              <p className="relative mt-3 text-sm leading-relaxed text-muted-foreground">
+              <h3 className="relative mt-6 text-2xl font-bold text-[#0B1E36]">{s.title}</h3>
+              <p className="relative mt-3 text-sm leading-relaxed text-slate-500 font-medium">
                 {s.desc}
               </p>
-              <div className="relative mt-6 text-xs tracking-wider text-aqua uppercase opacity-0 transition-opacity group-hover:opacity-100">
-                Enquire →
-              </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>
