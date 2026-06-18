@@ -24,9 +24,9 @@ export function Nav() {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 flex items-center justify-between gap-4">
         
         {/* Left Pill - Logo */}
-        <a href="#top" className="flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md px-4 py-2 sm:px-5 sm:py-2.5 shadow-sm border border-slate-200 hover:bg-white transition-colors">
-          <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-10 w-10 sm:h-12 sm:w-12 object-cover rounded-full" />
-          <span className="text-base sm:text-lg font-bold text-[#0B1E36] tracking-tight">Sai Aquatics</span>
+        <a href="#top" className="flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-sm border border-slate-200 hover:bg-white transition-colors">
+          <img src="/saiaqua%20logo.png" alt="Sai Aquatics Logo" className="h-7 w-7 sm:h-8 sm:w-8 object-cover rounded-full" />
+          <span className="text-xs sm:text-sm font-bold text-[#0B1E36] tracking-tight">Sai Aquatics</span>
         </a>
 
         {/* Center Pill - Desktop Nav */}

@@ -19,43 +19,43 @@ const projects: {
 }[] = [
   {
     img: home,
-    title: "Curved Wall Aquarium",
+    title: "Residential Aquarium Setup",
     cat: "Home",
     size: "300 gal",
-    loc: "Bandra Residence",
+    loc: "Adyar, Chennai",
     span: "sm:col-span-2 sm:row-span-2",
   },
-  { img: reef, title: "Reef Showpiece", cat: "Home", size: "180 gal", loc: "Juhu Villa", span: "" },
+  { img: reef, title: "Home Aquarium Design", cat: "Home", size: "180 gal", loc: "ECR, Chennai", span: "" },
   {
     img: office,
-    title: "Reception Centerpiece",
+    title: "Office Aquarium Project",
     cat: "Office",
     size: "500 gal",
-    loc: "BKC HQ",
+    loc: "OMR, Chennai",
     span: "sm:col-span-2",
   },
   {
     img: aquascape,
-    title: "Iwagumi Nature Scape",
+    title: "Custom Aquascape",
     cat: "Aquascaping",
     size: "60 gal",
-    loc: "Studio Build",
+    loc: "Nungambakkam, Chennai",
     span: "",
   },
   {
     img: commercial,
-    title: "Lobby Cylinder",
+    title: "Commercial Aquarium Installation",
     cat: "Commercial",
     size: "2,000 gal",
-    loc: "5★ Hotel",
+    loc: "T. Nagar, Chennai",
     span: "sm:row-span-2",
   },
   {
     img: discus,
-    title: "Discus Dining Tank",
+    title: "Freshwater Aquarium Setup",
     cat: "Home",
     size: "120 gal",
-    loc: "Powai Penthouse",
+    loc: "Anna Nagar, Chennai",
     span: "",
   },
 ];
@@ -79,10 +79,10 @@ export function Portfolio() {
           >
             <div className="text-xs font-bold tracking-[0.2em] text-[#00BCD4] uppercase">Portfolio</div>
             <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
-              Recent <span className="text-[#00BCD4]">installations</span>.
+              Our Aquarium <span className="text-[#00BCD4]">Projects</span>.
             </h2>
             <p className="mt-3 max-w-xl text-slate-500 font-medium">
-              A selection of homes, offices and commercial spaces transformed with our aquariums.
+              Explore some of our aquarium installations, aquascaping designs and maintenance projects completed across Chennai.
             </p>
           </motion.div>
           <motion.div 

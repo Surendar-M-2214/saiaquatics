@@ -3,24 +3,10 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const items = [
   {
-    name: "Rohan Mehta",
-    role: "Homeowner · Bandra",
+    name: "Sai Aquatics",
+    role: "Chennai Service",
     quote:
-      "Sai Aquatics built a wall aquarium that's become the centerpiece of our living room. The maintenance service is flawless — tank looks as stunning as day one.",
-    rating: 5,
-  },
-  {
-    name: "Priya Nair",
-    role: "Interior Designer",
-    quote:
-      "My go-to aquarium studio for luxury residential projects. Their aquascaping is on a different level and they always deliver on time.",
-    rating: 5,
-  },
-  {
-    name: "The Leela Hotels",
-    role: "Hospitality Client",
-    quote:
-      "A 2,000 gallon lobby installation handled end to end with zero disruption. Professional, precise, and the result is breathtaking.",
+      "Customer reviews and feedback will be displayed here as we continue serving aquarium enthusiasts across Chennai.",
     rating: 5,
   },
 ];
@@ -32,17 +18,17 @@ export function Testimonials() {
   const t = items[i];
 
   return (
-    <section className="flow-section">
+    <section className="flow-section bg-white">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
           <div className="text-xs font-bold tracking-[0.25em] text-[#00BCD4] uppercase">Testimonials</div>
           <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
-            Loved by <span className="text-[#00BCD4] italic">homes &amp; brands</span>.
+            What Our <span className="text-[#00BCD4]">Customers Say</span>.
           </h2>
         </div>
 
         <div className="relative mt-14">
-          <div className="bg-white border border-slate-200 shadow-sm relative overflow-hidden rounded-[2rem] p-8 sm:p-14 text-center">
+          <div className="bg-slate-50 border border-slate-200 shadow-sm relative overflow-hidden rounded-[2rem] p-8 sm:p-14 text-center">
             <div className="absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[10rem] leading-none text-[#E0F7FA] select-none">
               “
             </div>
@@ -65,34 +51,36 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-4">
-            <button
-              onClick={prev}
-              aria-label="Previous testimonial"
-              className="grid h-11 w-11 place-items-center rounded-full glass text-foreground hover:bg-white/10"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            <div className="flex gap-2">
-              {items.map((_, k) => (
-                <button
-                  key={k}
-                  onClick={() => setI(k)}
-                  aria-label={`Go to testimonial ${k + 1}`}
-                  className={`h-1.5 rounded-full transition-all ${
-                    i === k ? "w-8 bg-aqua" : "w-2 bg-white/20"
-                  }`}
-                />
-              ))}
+          {items.length > 1 && (
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <button
+                onClick={prev}
+                aria-label="Previous testimonial"
+                className="grid h-11 w-11 place-items-center rounded-full glass text-foreground hover:bg-white/10"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <div className="flex gap-2">
+                {items.map((_, k) => (
+                  <button
+                    key={k}
+                    onClick={() => setI(k)}
+                    aria-label={`Go to testimonial ${k + 1}`}
+                    className={`h-1.5 rounded-full transition-all ${
+                      i === k ? "w-8 bg-cyan-500" : "w-2 bg-slate-200"
+                    }`}
+                  />
+                ))}
+              </div>
+              <button
+                onClick={next}
+                aria-label="Next testimonial"
+                className="grid h-11 w-11 place-items-center rounded-full glass text-foreground hover:bg-white/10"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
             </div>
-            <button
-              onClick={next}
-              aria-label="Next testimonial"
-              className="grid h-11 w-11 place-items-center rounded-full glass text-foreground hover:bg-white/10"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          </div>
+          )}
         </div>
       </div>
     </section>

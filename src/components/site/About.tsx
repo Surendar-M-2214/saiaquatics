@@ -45,24 +45,20 @@ export function About() {
         >
           <div className="text-xs font-bold tracking-[0.2em] text-[#00BCD4] uppercase">About Sai Aquatics</div>
           <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl leading-tight">
-            A decade of crafting <span className="text-[#00BCD4]">living art</span>.
+            Creating Beautiful <span className="text-[#00BCD4]">Aquatic Spaces</span> Across Chennai.
           </h2>
           <p className="mt-5 text-slate-600 text-lg leading-relaxed">
-            Sai Aquatics began with a simple obsession — building aquatic worlds that feel alive.
-            From the first 30-gallon tank in a small studio to wall-spanning installations in luxury
-            homes and corporate lobbies, our craft has stayed the same: balanced ecosystems,
-            immaculate engineering, and design that elevates the room it lives in.
+            Sai Aquatics is a Chennai-based aquarium specialist with over 3 years of experience in aquarium setup, aquascaping and maintenance services. We help customers create beautiful and healthy aquatic environments for homes, offices and commercial spaces.
           </p>
           <p className="mt-4 text-slate-600 text-lg leading-relaxed">
-            Every project is bespoke. Every plant, stone, and fish is chosen. And every tank is
-            maintained as carefully as it was built.
+            Whether it's a compact home aquarium, a planted aquascape or a commercial display tank, every project is designed with attention to detail and long-term sustainability.
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { i: Award, t: "12+ Years", d: "Of aquatic mastery" },
-              { i: Leaf, t: "Live Ecosystems", d: "Naturally balanced" },
-              { i: Sparkles, t: "White-Glove", d: "Care & maintenance" },
+              { i: Award, t: "3+ Years", d: "Experience" },
+              { i: Leaf, t: "Custom Aquariums", d: "Designed For Every Space" },
+              { i: Sparkles, t: "Professional Maintenance", d: "Regular Care & Support" },
             ].map((b, index) => (
               <motion.div 
                 key={b.t}

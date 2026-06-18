@@ -77,27 +77,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sai Aquatics" },
+      { title: "Sai Aquatics | Aquarium Setup & Maintenance Services in Chennai" },
       {
         name: "description",
         content:
-          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+          "Sai Aquatics provides professional aquarium setup, aquascaping, tank cleaning, aquarium maintenance, fish supplies and custom aquatic solutions across Chennai.",
       },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Sai Aquatics" },
+      { name: "author", content: "Sai Aquatics" },
+      { property: "og:title", content: "Sai Aquatics | Aquarium Setup & Maintenance Services in Chennai" },
       {
         property: "og:description",
         content:
-          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+          "Sai Aquatics provides professional aquarium setup, aquascaping, tank cleaning, aquarium maintenance, fish supplies and custom aquatic solutions across Chennai.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Sai Aquatics" },
+      { name: "twitter:site", content: "@SaiAquatics" },
+      { name: "twitter:title", content: "Sai Aquatics | Aquarium Setup & Maintenance Services in Chennai" },
       {
         name: "twitter:description",
         content:
-          "Sai Aquatics specializes in custom aquarium setups, aquascaping, aquarium maintenance, tank cleaning, and aquatic supplies. We create stunning aquatic environme",
+          "Sai Aquatics provides professional aquarium setup, aquascaping, tank cleaning, aquarium maintenance, fish supplies and custom aquatic solutions across Chennai.",
       },
       {
         property: "og:image",

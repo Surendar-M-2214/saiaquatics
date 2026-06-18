@@ -38,14 +38,13 @@ export function Contact() {
         <div className="grid gap-10 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="text-xs tracking-[0.25em] text-aqua uppercase">Contact</div>
-            <h2 className="mt-3 text-4xl font-medium sm:text-5xl">
-              Let&rsquo;s build your <span className="text-gradient italic">aquarium</span>.
+            <h2 className="mt-3 text-4xl font-medium sm:text-5xl text-[#0B1E36]">
+              Let's Build Your <span className="text-[#00BCD4]">Dream Aquarium</span>.
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              Tell us about your space. We&rsquo;ll respond within one business day with a free
-              consultation.
+            <p className="mt-4 text-slate-600 font-medium">
+              Looking for a custom aquarium setup, aquascaping service or maintenance support? Contact Sai Aquatics today for a free consultation.
             </p>
-
+            
             <div className="mt-8 space-y-3">
               <a
                 href="tel:+919566002857"
@@ -98,7 +97,7 @@ export function Contact() {
 
           <form
             onSubmit={onSubmit}
-            className="glass-strong relative overflow-hidden rounded-[2rem] p-6 sm:p-9 lg:col-span-3"
+            className="glass-strong relative overflow-hidden rounded-[2rem] p-6 sm:p-9 lg:col-span-3 border border-slate-200 bg-white"
           >
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Name" name="name" placeholder="Your full name" />
@@ -125,16 +124,16 @@ export function Contact() {
               </div>
             )}
             {sent && (
-              <div className="mt-4 rounded-xl bg-aqua/15 px-4 py-2 text-sm text-aqua">
-                Thank you — we&rsquo;ll be in touch shortly.
+              <div className="mt-4 rounded-xl bg-cyan-50 px-4 py-2 text-sm text-[#00BCD4] font-bold">
+                Thank you — we'll be in touch shortly.
               </div>
             )}
 
             <button
               type="submit"
-              className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-aqua to-cyan-glow px-6 py-3.5 text-sm font-semibold text-ocean-deep shadow-[0_10px_40px_-10px_var(--aqua)] transition-transform hover:scale-[1.01] sm:w-auto"
+              className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#00BCD4] text-white font-bold px-6 py-3.5 text-sm shadow-xl shadow-cyan-500/20 transition-transform hover:scale-[1.01] sm:w-auto"
             >
-              Send Enquiry
+              Get Free Consultation
               <Send className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </button>
           </form>

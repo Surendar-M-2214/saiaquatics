@@ -5,32 +5,32 @@ const services = [
   {
     icon: Waves,
     title: "Aquarium Installation",
-    desc: "Custom freshwater, planted, and marine tanks built around your space — from concept to first fish.",
+    desc: "Professional aquarium setup services for homes, offices and commercial spaces. We help design, install and maintain aquariums tailored to your requirements.",
   },
   {
     icon: Mountain,
     title: "Custom Aquascaping",
-    desc: "Nature Aquarium, Iwagumi, Dutch and biotope styles by award-trained aquascapers.",
+    desc: "Beautiful underwater landscapes using aquatic plants, rocks and natural elements to create visually stunning aquariums.",
   },
   {
     icon: Wrench,
     title: "Aquarium Maintenance",
-    desc: "Scheduled white-glove visits keeping water chemistry, plants, and inhabitants in perfect health.",
+    desc: "Regular maintenance services including water testing, cleaning, filter servicing and fish health monitoring.",
   },
   {
     icon: Sparkles,
     title: "Tank Cleaning",
-    desc: "Deep cleaning, algae control, equipment servicing and water polishing for crystal clarity.",
+    desc: "Deep cleaning services to keep your aquarium healthy, crystal clear and algae free.",
   },
   {
     icon: FishIcon,
     title: "Fish & Accessories",
-    desc: "Curated livestock, premium plants, hardscape, lighting, filtration and CO₂ systems sourced worldwide.",
+    desc: "Quality fish, aquatic plants, fish food, filters, lighting and aquarium accessories for all types of setups.",
   },
   {
     icon: Building2,
     title: "Commercial Projects",
-    desc: "Wall-spanning showpieces for hotels, restaurants, hospitals and corporate lobbies.",
+    desc: "Custom aquarium solutions for offices, restaurants, clinics, showrooms and other commercial environments.",
   },
 ];
 
@@ -47,10 +47,10 @@ export function Services() {
         >
           <div className="text-xs font-bold tracking-[0.2em] text-[#00BCD4] uppercase">Services</div>
           <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
-            Everything aquatic, <span className="text-[#00BCD4]">end to end</span>.
+            Complete Aquarium Solutions <span className="text-[#00BCD4]">Under One Roof</span>.
           </h2>
           <p className="mt-4 text-slate-500 font-medium">
-            One studio for design, build, livestock and lifelong maintenance.
+            From aquarium setup and aquascaping to maintenance and fish supplies, we provide end-to-end aquatic solutions across Chennai.
           </p>
         </motion.div>
 

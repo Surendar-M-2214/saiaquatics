@@ -1,12 +1,20 @@
 import { useEffect, useRef, useState } from "react";
-import { Trophy, Users, Waves, Calendar } from "lucide-react";
+import { Users, Waves, Calendar, MapPin, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 
-const stats = [
-  { icon: Waves, end: 520, suffix: "+", label: "Projects Completed" },
-  { icon: Users, end: 480, suffix: "+", label: "Happy Customers" },
-  { icon: Trophy, end: 150, suffix: "+", label: "Commercial Installations" },
-  { icon: Calendar, end: 12, suffix: "yrs", label: "Years of Experience" },
+interface StatItem {
+  icon: any;
+  end?: number;
+  suffix?: string;
+  text?: string;
+  label: string;
+}
+
+const stats: StatItem[] = [
+  { icon: Waves, end: 10, suffix: "+", label: "Projects Completed" },
+  { icon: Calendar, end: 3, suffix: "+", label: "Years Experience" },
+  { icon: MapPin, text: "Chennai", label: "Local Service Coverage" },
+  { icon: Wrench, text: "Aquarium Setup", label: "Maintenance & Support" },
 ];
 
 function Counter({ end, suffix }: { end: number; suffix: string }) {
@@ -56,7 +64,7 @@ export function Stats() {
         >
           <div className="text-xs font-bold tracking-[0.2em] text-[#00BCD4] uppercase">Why Choose Us</div>
           <h2 className="mt-3 text-4xl font-bold text-[#0B1E36] sm:text-5xl">
-            Numbers from a decade <span className="text-[#00BCD4]">underwater</span>.
+            Why Customers Choose <span className="text-[#00BCD4]">Sai Aquatics</span>.
           </h2>
         </motion.div>
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -72,8 +80,12 @@ export function Stats() {
               <div className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-cyan-50 text-[#00BCD4]">
                 <s.icon className="h-6 w-6" />
               </div>
-              <div className="mt-5 text-5xl font-bold text-[#0B1E36]">
-                <Counter end={s.end} suffix={s.suffix} />
+              <div className={`mt-5 font-bold text-[#0B1E36] tracking-tight leading-none ${s.text ? "text-3xl py-1 sm:text-2xl lg:text-3xl" : "text-5xl"}`}>
+                {s.end !== undefined ? (
+                  <Counter end={s.end} suffix={s.suffix || ""} />
+                ) : (
+                  s.text
+                )}
               </div>
               <div className="mt-2 text-sm font-medium tracking-wider text-slate-500 uppercase">
                 {s.label}

@@ -13,8 +13,7 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-md text-sm text-slate-400 font-medium leading-relaxed">
-            Premium aquarium installations, aquascaping and maintenance for homes, offices and
-            commercial spaces across India.
+            Sai Aquatics provides aquarium setup, aquascaping, maintenance, tank cleaning and aquatic solutions for homes, offices and commercial spaces across Chennai.
           </p>
         </div>
 
@@ -42,7 +41,7 @@ export function Footer() {
             {[
               { i: Instagram, h: "#" },
               { i: Facebook, h: "#" },
-              { i: MessageCircle, h: "https://wa.me/919999999999" },
+              { i: MessageCircle, h: "https://wa.me/919566002857" },
             ].map(({ i: I, h }, k) => (
               <a
                 key={k}

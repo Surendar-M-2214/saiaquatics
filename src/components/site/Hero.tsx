@@ -16,36 +16,28 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#0B1E36] mb-6 leading-[1.1]"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#0B1E36] mb-6 leading-[1.1]"
             >
-              Designing Bespoke Aquatic Ecosystems.
+              Beautiful Aquariums.<br />
+              <span className="text-[#00BCD4]">Built For Your Space.</span>
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-              className="text-xl sm:text-2xl text-[#00BCD4] font-bold mb-4"
+              className="text-xl sm:text-2xl text-slate-600 font-semibold mb-10 leading-relaxed max-w-lg"
             >
-              Living Art For Your Home & Office.
-            </motion.p>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-slate-600 max-w-lg mb-10 text-lg leading-relaxed font-medium"
-            >
-              From custom aquascaping to white-glove maintenance, Sai Aquatics engineers stunning underwater worlds that breathe life into any space.
+              Custom aquarium setup, aquascaping and maintenance services in Chennai.
             </motion.p>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
               <a href="#portfolio" className="inline-flex items-center justify-center rounded-full bg-[#00BCD4] text-white font-bold px-8 py-3.5 transition-all hover:bg-[#0097A7] hover:scale-105 shadow-xl shadow-cyan-500/20">
-                View Our Work <span className="ml-2">→</span>
+                View Our Projects <span className="ml-2">→</span>
               </a>
             </motion.div>
           </div>
@@ -75,8 +67,8 @@ export function Hero() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="absolute left-0 top-1/4 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-2xl border border-slate-100 z-20"
             >
-              <div className="text-4xl font-bold text-[#00BCD4]">500+</div>
-              <div className="text-sm text-slate-600 font-bold mt-1">Custom Tanks<br/>Installed</div>
+              <div className="text-4xl font-bold text-[#00BCD4]">10+</div>
+              <div className="text-sm text-slate-600 font-bold mt-1">Projects<br/>Completed</div>
             </motion.div>
 
             {/* Floating Data Card 2 */}
@@ -86,8 +78,8 @@ export function Hero() {
               transition={{ delay: 1, duration: 0.8 }}
               className="absolute right-0 bottom-1/4 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-2xl border border-slate-100 z-20"
             >
-              <div className="text-4xl font-bold text-[#00BCD4]">12<span className="text-2xl">yrs</span></div>
-              <div className="text-sm text-slate-600 font-bold mt-1">Aquascaping<br/>Experience</div>
+              <div className="text-4xl font-bold text-[#00BCD4]">3+<span className="text-2xl">yrs</span></div>
+              <div className="text-sm text-slate-600 font-bold mt-1">Years<br/>Experience</div>
             </motion.div>
           </div>
         </div>
